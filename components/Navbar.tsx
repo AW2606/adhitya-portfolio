@@ -21,7 +21,7 @@ export default function Navbar() {
           
           {/* CTA BUTTON */}
           <a
-            href="/cv/adhitya-warman-cv.pdf"
+            href="/cv/cv-adhitya-warman.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-cyan-500 px-4 py-2 rounded-lg text-black font-bold hover:bg-cyan-400 transition-all shadow-lg shadow-cyan-500/10 active:scale-95"

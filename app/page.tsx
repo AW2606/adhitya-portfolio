@@ -50,7 +50,7 @@ export default function Home() {
                   GitHub
                 </a>
                 <a
-                  href="/cv/adhitya-warman-cv.pdf"
+                  href="/cv/cv-adhitya-warman.pdf"
                   target="_blank"
                   className="bg-cyan-500 px-6 py-2 rounded-lg text-black font-semibold hover:bg-cyan-400 transition-all"
                 >
