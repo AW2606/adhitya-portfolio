@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
 import { Inter, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
-import CursorGlow from "@/components/CursorGlow"
+import CursorGlow from "@/components/CursorGlow";
+// 1. Import komponen Analytics
+import { Analytics } from "@vercel/analytics/react";
 
 // Inisialisasi font
 const inter = Inter({ subsets: ["latin"] });
@@ -20,10 +22,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="bg-slate-950 text-white relative overflow-x-hidden">
-      <div className="absolute inset-0 bg-grid animate-grid opacity-30 -z-10"></div>
-      <CursorGlow />
-  {children}
-</body>
+        <div className="absolute inset-0 bg-grid animate-grid opacity-30 -z-10"></div>
+        <CursorGlow />
+        {children}
+        
+        {/* 2. Tambahkan komponen ini di sini */}
+        <Analytics />
+      </body>
     </html>
   );
 }
