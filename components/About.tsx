@@ -32,12 +32,15 @@ export default function About() {
                      rounded-3xl p-10 shadow-2xl"
         >
           <p className="text-gray-300 leading-relaxed text-lg">
-            I am an Informatics Engineering student at 
+            As an Informatics Engineering student at 
             <span className="text-cyan-400 font-medium">
-              {" "}Institut Teknologi Sumatera
+              {" "}ITERA
             </span>{" "}
-            with strong interest in web development, system logic,
-            and digital innovation.
+            and a
+            <span className="text-cyan-400 font-medium">
+              {" "}BSI Scholarship Awardee (Batch 5)
+            </span>{""},
+            I bridge the gap between technical logic and digital creativity. I am driven by a passion for building seamless web experiences and exploring the endless possibilities of digital innovation.
           </p>
 
           <p className="text-gray-400 leading-relaxed mt-6">

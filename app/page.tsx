@@ -107,8 +107,8 @@ export default function Home() {
                 description="Interactive structured UI deployed using Vercel."
               />
               <ProjectCard
-                title="Algorithms"
-                description="Implementation of basic algorithms and data structures using C++ and Python."
+                title="Automatic Assignment Correction System"
+                description="A Python-based automated grading tool designed to streamline the evaluation process. Utilizing string matching and logical validation to ensure precise and objective assignment scoring."
               />
               <ProjectCard
                 title="Videography Competition"
@@ -150,34 +150,47 @@ export default function Home() {
         <Contact />
 
         {/* 8. TERMINAL SECTION */}
-        <section className="max-w-4xl mx-auto px-6 py-24 pb-40">
-          <motion.div
-            initial={{ opacity: 0, y: 40 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            viewport={{ once: true }}
-          >
-            <div className="bg-black rounded-xl p-6 font-mono text-sm md:text-base text-green-400 border border-slate-800 shadow-2xl">
-              <div className="flex gap-2 mb-4 border-b border-slate-800 pb-2">
-                <div className="w-3 h-3 rounded-full bg-red-500"></div>
-                <div className="w-3 h-3 rounded-full bg-yellow-500"></div>
-                <div className="w-3 h-3 rounded-full bg-green-500"></div>
-              </div>
-              <div className="space-y-2">
-                <p><span className="text-blue-400">$</span> whoami</p>
-                <p className="text-white">Adhitya Warman</p>
-                <p className="pt-2"><span className="text-blue-400">$</span> skills --list</p>
-                <p className="text-white">C++, HTML, CSS, JavaScript, Python</p>
-                <p className="pt-2"><span className="text-blue-400">$</span> currently_learning</p>
-                <p className="text-white">Fullstack Development</p>
-                <p className="pt-2 animate-pulse">
-                  <span className="text-blue-400">$</span>
-                  <span className="ml-2 w-2 h-5 bg-green-400 inline-block align-middle"></span>
-                </p>
-              </div>
-            </div>
-          </motion.div>
-        </section>
+<section className="max-w-4xl mx-auto px-6 py-24 pb-40">
+  <motion.div
+    initial={{ opacity: 0, y: 40 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    transition={{ duration: 0.6 }}
+    viewport={{ once: true }}
+  >
+    <div className="bg-black rounded-xl p-6 font-mono text-sm md:text-base text-green-400 border border-slate-800 shadow-2xl">
+      <div className="flex gap-2 mb-4 border-b border-slate-800 pb-2">
+        <div className="w-3 h-3 rounded-full bg-red-500"></div>
+        <div className="w-3 h-3 rounded-full bg-yellow-500"></div>
+        <div className="w-3 h-3 rounded-full bg-green-500"></div>
+      </div>
+      <div className="space-y-2">
+        <p><span className="text-blue-400">$</span> whoami</p>
+        <p className="text-white">Adhitya Warman</p>
+        
+        <p className="pt-2"><span className="text-blue-400">$</span> skills --list</p>
+        <p className="text-white">C++, HTML, CSS, JavaScript, Python</p>
+        
+        <p className="pt-2"><span className="text-blue-400">$</span> currently_learning</p>
+        <p className="text-white">Fullstack Development</p>
+
+        {/* --- TAMBAHAN BAGIAN AWARDEE --- */}
+        <p className="pt-2"><span className="text-blue-400">$</span> get_honors</p>
+        <p className="text-white">
+          <span className="text-yellow-400">★</span> BSI Scholarship Awardee Batch 5
+        </p>
+        <p className="text-white">
+          <span className="text-yellow-400">★</span> 3rd Place Provincial Videography Competition
+        </p>
+        {/* ------------------------------- */}
+
+        <p className="pt-2 animate-pulse">
+          <span className="text-blue-400">$</span>
+          <span className="ml-2 w-2 h-5 bg-green-400 inline-block align-middle"></span>
+        </p>
+      </div>
+    </div>
+  </motion.div>
+</section>
       </main>
     </>
   );
